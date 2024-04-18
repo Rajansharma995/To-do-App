@@ -54,7 +54,7 @@ button{
     cursor: pointer;
     font-size: 16px;
     padding: 16px 50px;
-    background-color: rgb(0, 0, 255);
+    background-color: rgb(17, 17, 121);
     color: #fff;
     &:hover{
         background-color: #ff5945;
@@ -66,9 +66,8 @@ button{
 ul li{
     list-style: none;
     font-size: 19px;
-    padding: 12px 8px 12px 50px;
+    padding: 12px 8px 12px 29px;
     user-select: none;
-    cursor: pointer;
     position: relative;
 }
 
@@ -78,7 +77,7 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(./images/circle-png-8.png);
+    /* background-image: url(./images/circle-png-8.png); */
     background-size:cover;
     background-position: center;
     top: 8px;
@@ -91,4 +90,22 @@ ul li.checked{
 }
 ul li.checked::before{
     background-image: url(./images/checked.jpg);
+}
+
+ul li span{
+    position:absolute;
+    right : 0px;
+    top: 5px;
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #555;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    &:hover{
+        background: #edeef0;
+        color: #ff5945;
+    }
 }
